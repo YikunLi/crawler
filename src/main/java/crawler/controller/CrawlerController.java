@@ -1,6 +1,6 @@
 package crawler.controller;
 
-import crawler.domain.AmazonProduct;
+import crawler.domain.Ad;
 import crawler.service.CrawlerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,7 +25,7 @@ public class CrawlerController {
     }
 
     @ModelAttribute("results")
-    public List<AmazonProduct> findAll() {
+    public List<Ad> findAll() {
         return this.crawlerService.findAll();
     }
 
