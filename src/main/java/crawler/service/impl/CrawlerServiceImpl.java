@@ -29,7 +29,7 @@ public class CrawlerServiceImpl implements CrawlerService {
 
     @Override
     public boolean startCrawl() {
-        this.rawQueryRepository.loadQuerys(query ->
+        this.rawQueryRepository.loadQueries(query ->
                 CrawlerServiceImpl.this.crawlerPoolExecutor.getAd(ads ->
                         CrawlerServiceImpl.this.adRepository.save(ads)));
         return true;

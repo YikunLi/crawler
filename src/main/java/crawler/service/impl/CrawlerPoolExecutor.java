@@ -12,7 +12,6 @@ import java.util.List;
 public class CrawlerPoolExecutor {
 
     public void getAd(Callback callback) {
-
     }
 
     public interface Callback {

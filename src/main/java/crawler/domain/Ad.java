@@ -1,47 +1,41 @@
 package crawler.domain;
 
-import java.util.List;
+import lombok.Data;
+import org.springframework.context.annotation.Primary;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
- * Created by liyikun on 2017/6/25.
+ * Created by liyikun on 2017/7/2.
  */
+@Entity
+@Data
+@Table(name = "ad")
 public class Ad {
 
-    private String category;
-
-    private String query;
-
-    private String description;
+    @Id
+    private int adId;
 
     private int campaignId;
 
-    private String title;
-
-    private double price;
-
-    private int relevanceScore;
-
-    private String brand;
-
-    private int pClick;
-
-    private String thumbnail;
-
-    private double costPerClick;
+    private String keyWords;
 
     private double bidPrice;
 
-    private int query_group_id;
+    private double price;
 
-    private int position;
+    private String tumbnail;
 
-    private List<String> keywords;
+    private String description;
 
-    private int adId;
+    private String brand;
 
-    private String detail_url;
+    private String detailUrl;
 
-    private int rankCore;
+    private String category;
 
-    private int qualityScore;
+    private String title;
+    
 }

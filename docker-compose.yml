@@ -1,0 +1,11 @@
+mysqlserver:
+  image: mysql/mysql-server
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_DATABASE: crawler
+    MYSQL_USER: liyikun
+    MYSQL_PASSWORD: 123456
+    MYSQL_ROOT_PASSOWRD: root
+    MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  container_name: mysqlserver

@@ -11,36 +11,23 @@ import java.util.List;
 @Data
 public class AmazonProduct {
 
-    @Id
     private final String id;
-
-    private String category;
-
-    private String query;
-
-    private String description;
 
     private String title;
 
     private double price;
 
-    private double relevanceScore;
+    private String thumbnail;
+
+    private String description;
 
     private String brand;
 
-    private int pClick;
-
-    private String thumbnail;
-
-    private int position;
-
-    private List<String> keywords;
-
     private String detailUrl;
 
-    private int rankCore;
+    private String category;
 
-    private int qualityScore;
+    private String query;
 
     public AmazonProduct(String id) {
         this.id = id;
